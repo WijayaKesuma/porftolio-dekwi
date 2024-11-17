@@ -1,0 +1,1513 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+}
+
+#land_page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Background_Home_Pinterest.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.navigation_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+a{
+    color: #fff;
+}
+
+.navigation_title a > h3{
+    font-size: 30px;
+}
+
+.navigation_title a > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef); /* Warna */
+  -webkit-background-clip: text; /* Memotong latar belakang ke dalam teks */
+  -webkit-text-fill-color: transparent; /* Membuat teks menjadi transparan */
+}
+
+.navigation_menus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation_menus > a{
+    margin: 0 20px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation_menus > a:hover{
+    border-bottom: 2px solid #7ed5ef;
+    transition: 0.7s;
+}   
+
+.navigation_action > i{
+    display: none;
+}
+
+#btn_close{
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    right: -40px;
+    top: 85px;
+    width: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.5s ease-in-out;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0080ff;
+    border-left: 2px solid #0080ff;
+    border-bottom-left-radius: 10px;
+    display: none;
+}
+
+.container-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 25px;
+    padding-left: 30px;
+}
+
+.container-sidebar a{
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.container-sidebar a:hover{
+    border-bottom: 2px solid #0080ff;
+}
+
+.navigation_action > button.btn_contact_onclick{
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ==== Style Landing Page ==== */
+
+.content_profile{
+    max-width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_profile_information{
+    width: 45%;
+}
+
+.content_profile_information > h1{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.content_profile_information > h1 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef); /* Warna */
+   -webkit-background-clip: text; /* Memotong latar belakang ke dalam teks */
+   -webkit-text-fill-color: transparent; /* Membuat teks menjadi transparan */
+}
+
+.content_profile_information > h3 > span#typing-text {
+    background: linear-gradient(to right, #0080ff, #7ed5ef); /* Warna */
+    -webkit-background-clip: text; /* Memotong latar belakang ke dalam teks */
+    -webkit-text-fill-color: transparent; /* Membuat teks menjadi transparan */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #0080ff;
+    padding-right: 3px;
+    animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% { border-color: #0080ff;}
+}
+
+.content_profile_information > h3{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.content_profile_information > p{
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.content_profile_information > .media_social i{
+    color: #fff;
+    font-size: 25px;
+    margin: 15px 20px 25px 0;
+    border: 2px solid #0080ff;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.content_profile_information > .media_social i:hover{
+    color: #000;
+    background-color: #0080ff;
+    transition: 0.3s ease-in-out;
+}
+
+.content_profile_information > .content_profile_button a {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+    border-radius: 3px;
+}
+
+.content_profile_picture{
+    width: 45%;
+    text-align: right;
+}
+
+.content_profile_picture > img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #0080ff;
+    transition: 0.5s ease-in-out;
+    border: 4px solid #7ed5ef;
+}
+
+.content_profile_picture > img:hover{
+    box-shadow: 0 0 25px #0080ff,
+                0 0 50px #0080ff,
+                0 0 100px #7ed5ef;
+    
+}
+
+/* ==== Style Contact OnClick ==== */
+.contact_onclick {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -800px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.contact_onclick > i{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container_contact_onclick{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contact_onclick > h3{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.container_contact_onclick > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+}
+/* END */
+/* === END === */
+
+/* === Style My Skills === */
+.my_skills{
+    width: 50%;
+    height: 320px;
+    background-color: #000;
+    box-shadow: rgba(0, 110, 255, 0.25) 0px 0.0625em 0.0625em, rgba(0, 85, 254, 0.25) 0px 0.125em 0.5em, rgba(0, 204, 255, 0.1) 0px 0px 0px 1px inset;
+    position: absolute;
+    top: -250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.my_skills > h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.my_skills > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef); /* Warna */
+   -webkit-background-clip: text; /* Memotong latar belakang ke dalam teks */
+   -webkit-text-fill-color: transparent; /* Membuat teks menjadi transparan */
+}
+
+.my_skills > p{
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.my_skills > .skills_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+}
+
+#left_button,
+#right_button {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 45px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#left_button {
+    left: 60px;
+}
+
+#right_button {
+    right: 60px;
+}
+
+/* Efek saat tombol kiri atau kanan tidak aktif */
+#left_button[style*="pointer-events: none"],
+#right_button[style*="pointer-events: none"] {
+    color: rgba(255, 255, 255, 0.5); /* Tombol gelap */
+    cursor: not-allowed; /* Menonaktifkan kursor */
+}
+
+
+.skills_container > .skills {
+    width: 90px;  /* Sesuaikan dengan ukuran SVG */
+    height: 90px; /* Sesuaikan dengan ukuran SVG */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skills_container > .skills > span {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.skills > .skills_progres {
+    position: relative;
+    width: 90px;  /* Sesuaikan dengan ukuran SVG */
+    height: 90px; /* Sesuaikan dengan ukuran SVG */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills > .skills_progres > svg {
+    transform: rotate(90deg);  /* Agar progres dimulai dari atas */
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #444;  /* Background hitam */
+    stroke-width: 6;  /* Sesuaikan ketebalan border */
+}
+
+.circle {
+    fill: none;
+    stroke: #0080ff;  /* Warna biru untuk progress */
+    stroke-width: 6;  /* Sesuaikan ketebalan border */
+    stroke-dasharray: 251;  /* Perhitungkan keliling untuk r=40 */
+    stroke-dashoffset: 0;  /* Nilai offset untuk mengatur progres */
+    transition: stroke-dashoffset 1s ease-out;
+}
+
+.skills > .skills_progres > h5 {
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+}
+
+/* ==== Style Section About Me ==== */
+.page_about{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.about_me_picture{
+    width: 45%;
+}
+
+.about_me_picture > img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #0080ff;
+    transition: 0.5s ease-in-out;
+    border: 4px solid #7ed5ef;
+}
+
+.about_me_picture > img:hover{
+    box-shadow: 0 0 25px #0080ff,
+                0 0 50px #0080ff,
+                0 0 100px #7ed5ef;
+    
+}
+
+.about_me_information{
+    width: 48%;
+}
+
+h6 {
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
+.about_me_information > h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.about_me_information > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef); 
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+}
+
+.about_me_information > p {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+.about_me_information > .about_me_button a{
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+    border-radius: 3px;
+}
+/* === End === */
+
+/* ==== Style My Services ==== */
+/* .page_services{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: 1px solid #fff;
+}
+
+.page_services > h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.page_services > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef); 
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent; 
+}
+
+.page_services > .container_services{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.container_services > .services{
+    width: 30%;
+    height: 300px;
+    background-color: #0080ff;
+    border-radius: 5px;
+    border: 2px solid #0080ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container_services > .services:hover{
+    background-color: transparent;
+    border: 3px solid #0080ff;
+    padding: 20px;
+}
+
+.services > i.fa-figma {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.services > img.frontend {
+    width: 30%;
+}
+
+.services > img.backend {
+    width: 23%;
+    margin-bottom: 10px;
+}
+
+.services > h4 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.services > p{
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+} */
+/* === End === */
+
+/* ==== Style Page My Projects ==== */
+.page_projects{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.page_projects > h3{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.page_projects > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.container_projects{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 30px;
+}
+
+.my_projects{
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #0080ff;
+    transition: 0.7s ease;
+}
+
+.my_projects:hover{
+    box-shadow: rgba(0, 110, 255, 0.603) 0px 14px 35px,
+                rgba(0, 110, 255, 0.603) 0px -12px 30px, 
+                rgba(0, 110, 255, 0.603) 0px 4px 6px, 
+                rgba(0, 110, 255, 0.603) 0px 12px 13px, 
+                rgba(0, 110, 255, 0.603) 0px -3px 5px;
+}
+
+.my_projects > img{
+    width: 80%;
+    border-radius: 5px;
+}
+
+.my_projects > img:hover{
+    
+}
+
+.my_projects > h5{
+    color: #fff;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.my_projects > p{
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 20px;
+}
+/* === End === */
+
+/* ==== Style Page My Contact ==== */
+.page_contact{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.page_contact > h3{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.page_contact > h3 > span{
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+}
+
+.container_contact_me{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact_me > input{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #0080ff;
+}
+
+.contact_me > input[type="text"]:valid,
+input[type="email"],
+input[type="number"]{
+    color: #fff;
+}
+
+.contact_me > input::placeholder{
+    color: #fff;
+}
+
+.contact_me > textarea{
+    width: 100%;
+    height: 170px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #0080ff;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.contact_me > textarea:valid{
+    color: #fff;
+}
+
+.contact_me > textarea::placeholder{
+    color: #fff;
+}
+
+.contact_me > button.btn_contact{
+    color: #fff;
+    border: none;
+    padding: 12px 14px;
+    background: linear-gradient(to right, #0080ff, #7ed5ef);
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* === END === */
+
+/* ==== Style Footer ==== */
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+footer > .container_footer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 0 20px;
+}
+
+.container_footer > .media_social{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container_footer > .media_social i:hover{
+    transition: 0.8s;
+    color: #0080ff;
+}
+
+.container_footer > .link_footer{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.container_footer > .link_footer a:hover{
+    color: #bebebe;
+    transition: 0.8s;
+}
+
+.container_footer > p.copyright{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+/* === END === */
+
+/* ==== Style Responsive 1320px ==== */
+@media (max-width: 1320px) {
+    .navigation_menus > a{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .contact_onclick{
+        top: 0;
+    }
+
+    .content_profile{
+        justify-content: space-between;
+    }
+
+    .content_profile_information > h1{
+        font-size: 2.1rem;
+    }
+
+    .content_profile_information > h3{
+        font-size: 1.2rem;
+    }
+
+    .content_profile_information > .media_social i{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content_profile_picture > img{
+        width: 85%;
+    }
+
+    .content_profile_information > .content_profile_button a{
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .my_skills{
+        width: 70%;
+        height: 320px;
+        top: -190px;
+    }
+
+    .page_about{
+        padding-top: 20%;
+    }
+
+}
+
+/* ===== Style Responsive Laptop (1024px) ===== */
+@media screen and (max-width: 1024px) {
+    .navigation_menus > a{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .contact_onclick{
+        top: -1000px;
+    }
+
+    .content_profile{
+        justify-content: space-between;
+    }
+
+    .content_profile_information > h1{
+        font-size: 2.1rem;
+    }
+
+    .content_profile_information > h3{
+        font-size: 1.2rem;
+    }
+
+    .content_profile_information > .media_social i{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content_profile_picture > img{
+        width: 85%;
+    }
+
+    .content_profile_information > .content_profile_button a{
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .my_skills{
+        width: 70%;
+        height: 320px;
+        top: -190px;
+    }
+}
+/* === End === */
+
+/* ===== Style Responsive Tablet ===== */
+@media (min-width: 769px) and (max-width: 991px) {
+    .contact_onclick{
+        display: none;
+    }
+    
+    .navigation_menus > a{
+        display: none;
+    }
+
+    .navigation_action > button.btn_contact_onclick{
+        display: none;
+    }
+
+    .navigation_action > i{
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    #btn_close{
+        font-size: 1.8rem;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .container-sidebar > a{
+        font-size: 14px;
+    }
+
+    .content_profile{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: -10%;
+    }
+
+    .content_profile_information{
+        width: 80%;
+        order: 2;
+    }
+
+    .content_profile_information > h1{
+        font-size: 2.7rem;
+    }
+
+    .content_profile_information > h3{
+        font-size: 1.7rem;
+    }
+
+    .content_profile_information > p{
+        font-size: 16px;
+    }
+
+    .content_profile_information > .media_social i{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .content_profile_picture > img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .content_profile_information > .content_profile_button a{
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .my_skills{
+        width: 70%;
+        height: 320px;
+        top: -200px;
+    }
+
+    .my_skills > h3{
+        font-size: 1.7rem;
+    }
+    
+    .my_skills > p{
+        font-size: 0.8rem;
+    }
+
+    .my_skills > .skills_container {
+        gap: 40px;
+    }
+
+    #left_button {
+        left: 40px;
+    }
+    
+    #right_button {
+        right: 40px;
+    }
+
+    h6{
+        font-size: 13px;
+    }
+
+    .page_about{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 35% 0 10%;
+        gap: 40px;
+    }
+
+    .about_me_information{
+        width: 70%;
+    }
+
+    .about_me_information > h3{
+        font-size: 1.8rem;
+    }
+
+    .about_me_information > p{
+        font-size: 12px;
+        margin: 20px 0 30px;
+    }
+
+    /* Style Page My Projects */
+    .page_projects{
+        padding: 10% 0 20%;
+    }
+
+    .page_projects > h3{
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .container_projects{
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .my_projects > h5{
+        font-size: 1.1em;
+    }
+
+    .my_projects > p{
+        font-size: 11px;
+    }    
+
+    .container_contact_me{
+        width: 80%;
+    }
+
+    .page_contact > h3{
+        font-size: 2rem;
+    }
+
+    .page_contact{
+        padding-bottom: 25%;
+    }
+}
+/* === End === */
+
+/* ===== Style Responsive Mobile ===== */
+@media (min-width: 577px) and (max-width: 768px) {
+    .contact_onclick{
+        display: none;
+    }
+    
+    .navigation_title a > h3{
+        font-size: 25px;
+    }
+
+    .navigation_menus > a{
+        display: none;
+    }
+
+    .navigation_action > button.btn_contact_onclick{
+        display: none;
+    }
+
+    .navigation_action > i{
+        display: block;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    #btn_open,
+    .sidebar{
+        font-size: 1.5rem;
+        display: block;
+        z-index: 99;
+        top: 77.5px;
+    }
+
+    #btn_close{
+        font-size: 1.8rem;
+    }
+
+    .container-sidebar > a{
+        font-size: 14px;
+    }
+
+    #land_page{
+        padding: 60% 0;
+    }
+
+    .content_profile{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content_profile_picture{
+        width: 60%;
+        order: 1;
+        text-align: center;
+    }
+
+    .content_profile_information{
+        width: 80%;
+        order: 2;
+        text-align: center;
+        padding: 0;
+    }
+
+    .content_profile_information > h1{
+        font-size: 2.2rem;
+    }
+
+    .content_profile_information > h3{
+        font-size: 1.2rem;
+    }
+
+    .content_profile_information > p{
+        font-size: 13px;
+    }
+
+    .content_profile_information > .media_social i{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .content_profile_picture > img{
+        width: 70%;
+    }
+
+    .content_profile_information > .content_profile_button a{
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .my_skills{
+        top: -230px;
+    }
+
+    .my_skills > .skills_container {
+        gap: 25px;
+    }
+
+    .my_skills > h3{
+        font-size: 1.6rem;
+    }
+    
+    .my_skills > p{
+        font-size: 0.7rem;
+    }
+
+    /* Style responsive about */
+    .page_about{
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .about_me_picture{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about_me_information{
+        width: 80%;
+    }
+
+    .about_me_information{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .about_me_information > p{
+        text-align: justify;
+        text-indent: 30px;
+    }
+
+    .about_me_information > h3{
+        font-size: 1.9rem;
+    }
+
+    .about_me_information > .about_me_button a{
+        padding: 8px 16px;
+        font-size: 14px;
+    }    
+
+    /* Style Page My Projects */
+    .page_projects{
+        padding-top: 10%;
+    }
+
+    .page_projects > h3{
+        font-size: 1.9rem;
+        margin-bottom: 30px;
+    }
+
+    .container_projects{
+        width: 80%;
+        grid-template-columns: 2fr;
+    }
+
+    .my_projects > h5{
+        font-size: 1.1em;
+    }
+
+    .my_projects > p{
+        font-size: 11px;
+    }
+
+    .page_contact{
+        padding: 10% 0;
+    }
+
+    .container_contact_me{
+        width: 80%;
+    }
+
+    .page_contact > h3{
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 724px) {
+    #land_page{
+        padding: 70% 0;
+    }
+    .my_skills > p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 664px) {
+    #land_page{
+        padding: 80% 0;
+    }
+    .my_skills > p{
+        font-size: 0.7rem;
+    }
+
+    .container_contact_me{
+        width: 90%;
+    }
+}
+/* === End === */
+
+@media (max-width: 576px) {
+    .contact_onclick{
+        display: none;
+    }
+    
+    #land_page{
+        padding: 90% 0;
+    }
+
+    .navigation_title a > h3{
+        font-size: 22px;
+    }
+
+    .navigation_menus > a{
+        display: none;
+    }
+
+    .navigation_action > button.btn_contact_onclick{
+        display: none;
+    }
+
+    .navigation_action > i{
+        display: block;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    #btn_open,
+    .sidebar{
+        font-size: 1.3rem;
+        display: block;
+        z-index: 99;
+        top: 73.5px;
+    }
+
+    #btn_close{
+        font-size: 1.6rem;
+    }
+
+    .container-sidebar > a{
+        font-size: 14px;
+    }
+
+    .content_profile{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        margin-top: -10%;
+    }
+
+    .content_profile_picture{
+        width: 60%;
+        order: 1;
+        text-align: center;
+    }
+
+    .content_profile_information{
+        width: 100%;
+        order: 2;
+        text-align: center;
+        padding: 0;
+    }
+
+    .content_profile_information > h1{
+        font-size: 1.7rem;
+    }
+
+    .content_profile_information > h3{
+        font-size: 1.1rem;
+    }
+
+    .content_profile_information > p{
+        font-size: 11px;
+    }
+
+    .content_profile_information > .media_social i{
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .content_profile_picture > img{
+        width: 90%;
+    }
+
+    .content_profile_information > .content_profile_button a{
+        padding: 8px 14px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .my_skills{
+        width: 85%;
+        height: 280px;
+        top: -180px;
+    }
+
+    .my_skills > h3{
+        font-size: 1.4rem;
+    }
+
+     /* Style responsive about */
+    .page_about{
+        width: 100%;
+        flex-direction: column;
+        padding: 50% 0 0;
+    }
+
+    .about_me_picture{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about_me_information{
+        width: 80%;
+        text-align: center;
+    }
+
+    .about_me_information > h3{
+        font-size: 1.6rem;
+    }
+
+    .about_me_information > p{
+        font-size: 11px;
+        margin-bottom: 35px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    .about_me_information > .about_me_button a{
+        padding: 8px 16px;
+        font-size: 13px;
+    }  
+
+    /* Style Page My Projects */
+    .page_projects{
+        width: 90%;
+        padding-top: 10%;
+    }
+
+    .page_projects > h3{
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .container_projects{
+        grid-template-columns: 2fr;
+    }
+
+    .my_projects > h5{
+        font-size: 1.1em;
+    }
+
+    .my_projects > p{
+        font-size: 11px;
+    }
+
+    .page_contact{
+        width: 90%  ;
+    }
+
+    .page_contact > h3{
+        font-size: 1.6rem;
+    }
+
+    .contact_me > input::placeholder{
+        font-size: 12px;
+    }
+
+    .contact_me > textarea::placeholder{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 564px) {
+    .container_contact_me{
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+    .contact_me > button.btn_contact{
+        padding: 8px 12px;
+    }
+
+    .container_footer > .link_footer{
+        font-size: 13px;
+    }
+
+    .container_footer > p.copyright{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Style Page My Projects */
+    .page_projects{
+        padding-top: 28%;
+    }
+
+    .container_projects{
+        grid-template-columns: 2fr;
+    }
+
+    .my_projects > h5{
+        font-size: 1.1em;
+    }
+
+    .my_projects > p{
+        font-size: 11px;
+    }
+
+    .page_contact{
+        padding-top: 22%;
+    }
+}
+
+@media (max-width: 400px) {
+    #land_page{
+        padding: 110% 0;
+    }
+}
+
+@media (max-width: 380px) {
+    #land_page{
+        padding: 120% 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .my_skills{
+        width: 80%;
+        height: 300px;
+        top: -180px;
+    }
+
+    #right_button{
+        right: 20px;
+    }
+    #left_button{
+        left: 20px;
+    }
+
+    /* Style responsive about */
+    .page_about{
+        width: 90%;
+        flex-direction: column;
+        padding: 55% 0 20%;
+    }
+
+    .about_me_picture{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about_me_information{
+        width: 80%;
+    }
+
+    .about_me_information{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .about_me_information > p{
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 10px;
+    }
+
+    .about_me_information > h3{
+        font-size: 1.4rem;
+    }
+
+    .about_me_information > .about_me_button a{
+        padding: 7px 14px;
+        font-size: 12px;
+    }   
+
+    .page_projects{
+        width: 90%;
+        padding-top: 20%;
+    }
+
+    .page_contact{
+        width: 90%;
+        padding-top: 20%;
+    }
+}
+/* === End === */
+
+/* ==== Style Mobile Mini ==== */
+@media (max-width: 325px) {
+    .page_about{
+        width: 100%;
+        padding-top: 30%;
+    }
+
+    .about_me_information > p{
+        margin: 15px 0;
+    }
+
+    .page_projects{
+        width: 100%;
+    }
+
+    .page_contact{
+        width: 100%;
+    }
+
+}
+/* === END === */

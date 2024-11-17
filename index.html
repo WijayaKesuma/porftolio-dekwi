@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style/portfolio.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link CSS FontAwesome Offline -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css"> -->
+    <!-- Link JS FontAwesome Offline -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.6.0-web/js/all.min.js"> -->
+x`</head>
+<body>
+    <!-- Header Portfolio -->
+    <header id="home">
+        <nav class="navigation_wrapper" data-aos="fade-down" data-aos-duration="1000">
+            <!-- Title -->
+             <div class="navigation_title">
+                <a href=""><h3>My<span>Portfolio</span></h3></a>
+             </div>
+
+             <!-- Navigation Links -->
+              <div class="navigation_menus">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <!-- <a href="#services">Services</a> -->
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+              </div>
+
+              <!-- Navigation Button Contact Me -->
+               <div class="navigation_action">
+                    <i class="fa-solid fa-bars" id="btn_open" onclick="openSidebar()"></i>
+                    <i class="fa-solid fa-xmark" id="btn_close" onclick="closeSidebar()"></i>
+                    <button type="button" class="btn_contact_onclick" onclick="openContact()">Contact Me</button>
+               </div>
+              
+               <!-- Side Bar / Side Navigation Bar -->
+                <aside class="sidebar" id="sidebar">
+                    <div class="container-sidebar">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <!-- <a href="#services">Services</a> -->
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </aside>
+        </nav>
+    </header>
+
+    <!-- Contact Me Button Click -->
+    <section class="contact_onclick" id="contact_onclick">
+        <i class="fa-solid fa-xmark" id="close_contact" onclick="closeContact()"></i>
+        <div class="container_contact_onclick">
+                <h6>Drop me a message</h6>
+    
+                <h3>Contact <span>Me</span></h3>
+    
+                <form action="" class="container_contact_me">
+                    <div class="contact_me">
+                        <input type="text" placeholder="Full Name">
+    
+                        <input type="email" placeholder="Email">
+    
+                        <input type="number" placeholder="Phone Number">
+    
+                        <input type="text" placeholder="Your Address">
+                    </div>
+                    
+                    <div class="contact_me">
+                        <textarea name="textarea" id="" placeholder="Your Message"></textarea>
+                        <button  class="btn_contact">Send Message</button>
+                    </div>
+                </form>
+    
+        </div>
+     </section>
+
+    <!-- Main Content / Landing Page -->
+    <main class="container" id="land_page">
+
+        <!-- Content Portfolio -->
+        <section class="content_profile">
+            <!-- Content Information My Self -->
+            <div class="content_profile_information">
+                <h1 data-aos="zoom-in-right" data-aos-duration="1400">Hi, It's <span>Dekwaii</span></h1>
+
+                <h3 data-aos="zoom-in-right" data-aos-duration="1400">I'm a <span id="typing-text"></span></h3>
+
+                <p data-aos="zoom-in-right" data-aos-duration="1400">I am a web developer currently learning and building my skills. Passionate about creating websites and improving my craft with every project. Excited to grow and take on new challenges!</p>
+
+                <!-- Media Social -->
+                <div class="media_social">
+                    <i class="fa-brands fa-github" data-aos="zoom-in" data-aos-duration="1400"></i>
+                    <i class="fa-brands fa-instagram" data-aos="zoom-in" data-aos-duration="1400"></i>
+                    <i class="fa-brands fa-whatsapp" data-aos="zoom-in" data-aos-duration="1400"></i>
+                </div>
+
+                <!-- Button More About Me -->
+                <div class="content_profile_button" data-aos="zoom-in-right" data-aos-duration="1400">
+                    <a href="#about">More About Me</a>
+                </div>
+
+            </div>
+            <!-- Content My Photo Profil -->
+             <div class="content_profile_picture" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="img/dekwaii.png" alt="">
+             </div>
+        </section>
+    </main>
+
+    <!-- Section About Me -->
+    <section class="container" id="about">
+        <!-- My Skills -->
+        <section class="my_skills" data-aos="fade-up" data-aos-duration="700"> 
+            <h3>My <span>Skills</span></h3>
+
+            <p>I am still in the learning process. Let's share knowledge and experiences with each other.</p>
+
+            <div class="skills_container">
+                <i class="fa-solid fa-angle-left" id="left_button"></i>
+
+                <div class="skills" data-value="50">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>50%</h5>
+                    </div>
+                    <span>HTML</span>
+                </div>
+
+                <div class="skills" data-value="20">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>20%</h5>
+                    </div>
+                    <span>CSS</span>
+                </div>
+
+                <div class="skills" data-value="2">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>2%</h5>
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skills" data-value="0.3">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>0.3%</h5>
+                    </div>
+                    <span>PHP</span>
+                </div>
+
+                <div class="skills" data-value="0.5">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>0.5%</h5>
+                    </div>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="skills" data-value="0">
+                    <div class="skills_progres">
+                        <svg width="90" height="90">
+                            <circle cx="45" cy="45" r="40" class="circle-bg" />
+                            <circle cx="45" cy="45" r="40" class="circle" />
+                        </svg>
+                        <h5>0%</h5>
+                    </div>
+                    <span>Tailwind</span>
+                </div>
+
+                <i class="fa-solid fa-angle-right" id="right_button"></i>
+            </div>            
+            
+        </section>
+        
+        <!-- About Me -->
+        <div class="page_about">
+            <!-- About Me Picture -->
+            <div class="about_me_picture" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="img/dekwaii.png" alt="">
+            </div>
+
+            <!-- About Me Information -->
+             <div class="about_me_information">
+                    <h6 data-aos="fade-up" data-aos-duration="1400">LET ME INTRODUCE MY SELF</h6>
+
+                    <h3 data-aos="fade-up" data-aos-duration="1600">About <span>Me</span></h3>
+
+                    <p data-aos="fade-up" data-aos-duration="1800">I am a beginner programmer currently learning and building connections in web technology. I am 19 years old, born in Gianyar on October 9, 2005, and currently living in Canggu. My hobbies include gaming, playing volleyball, and occasionally playing the guitar. My goal is to succeed in the IT field.</p>
+
+                    <div class="about_me_button" data-aos="fade-up" data-aos-duration="1200">
+                        <a href="#contact">Let's Be Friends</a>
+                    </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Section More About Me -->
+     <!-- <section class="container" id="services">
+        <div class="page_services">
+            <h6>WHAT I WILL DO FOR YOU</h6>
+
+            <h3>My <span>Services</span></h3>
+
+            <div class="container_services">
+                <div class="services">
+                    <i class="fa-brands fa-figma"></i>
+
+                    <h4>UI / UX Design</h4>
+
+                    <p>Creating visually appealing, intuitive designs focused on enhancing user experience and accessibility across all devices.</p>
+                </div>
+                <div class="services">
+                    <img src="img/FrontEnd.png" alt="" class="frontend">
+
+                    <h4>Front End Development</h4>
+
+                    <p>Building interactive, responsive, and high-performance interfaces that bring designs to life for seamless user engagement.</p>
+                </div>
+                <div class="services">
+                    <img src="img/BackEnd.png" alt="" class="backend">
+
+                    <h4>Back End Development</h4>
+
+                    <p>Developing secure, scalable back-end systems to support data management and enhance application functionality.</p>
+                </div>
+            </div>
+        </div>
+     </section> -->
+
+     <section class="container" id="projects">
+        <div class="page_projects">
+            <h6 data-aos="fade-down" data-aos-duration="1200">THIS MY PROJECTS</h6>
+
+            <h3 data-aos="fade-down" data-aos-duration="1200">My <span>Projects</span></h3>
+
+            <div class="container_projects">
+                <div class="my_projects" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="img/portfolio.png" alt="">
+                    
+                    <h5>Portfolio</h5>
+
+                    <p>A personal portfolio website built using HTML, CSS, and JavaScript. This website showcases my web development skills with a clean and responsive design. It highlights my projects, UI/UX design expertise, and programming abilities, offering visitors a smooth and engaging browsing experience.!</p>
+                </div>
+
+                <div class="my_projects" data-aos="zoom-out" data-aos-duration="1400">
+                    <img src="img/TemplateProjects.png" alt="">
+                    
+                    <h5>Project 2</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi aperiam, quo ducimus iusto excepturi!</p>
+                </div>
+
+                <div class="my_projects" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="img/TemplateProjects.png" alt="">
+                    
+                    <h5>Project 3</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi aperiam, quo ducimus iusto excepturi!</p>
+                </div>
+
+                <div class="my_projects" data-aos="zoom-out" data-aos-duration="1400">
+                    <img src="img/TemplateProjects.png" alt="">
+                    
+                    <h5>Project 4</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi aperiam, quo ducimus iusto excepturi!</p>
+                </div>
+
+                <div class="my_projects" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="img/TemplateProjects.png" alt="">
+                    
+                    <h5>Project 5</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi aperiam, quo ducimus iusto excepturi!</p>
+                </div>
+
+                <div class="my_projects" data-aos="zoom-out" data-aos-duration="1400">
+                    <img src="img/TemplateProjects.png" alt="">
+                    
+                    <h5>Project 6</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi aperiam, quo ducimus iusto excepturi!</p>
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+     <section class="container" id="contact">
+        <div class="page_contact" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <h6 >Drop me a message</h6>
+
+            <h3>Contact <span>Me</span></h3>
+
+            <form action="" class="container_contact_me">
+                <div class="contact_me">
+                    <input type="text" placeholder="Full Name">
+
+                    <input type="email" placeholder="Email">
+
+                    <input type="number" placeholder="Phone Number">
+
+                    <input type="text" placeholder="Your Address">
+                </div>
+                
+                <div class="contact_me">
+                    <textarea name="textarea" id="" placeholder="Your Message"></textarea>
+                    <button  class="btn_contact">Send Message</button>
+                </div>
+            </form>
+
+        </div>
+     </section>
+
+    <footer data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+        <div class="container_footer">
+
+            <div class="media_social">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="link_footer">
+                <a href="">FAQ</a>
+                <a href="#about">AboutMe</a>
+                <a href="#projects">MyProject</a>
+                <a href="#contact">ContactMe</a>
+            </div>
+
+            <p class="copyright">
+                &copy; <span id="year"></span> Wijaya Kesuma | All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Js -->
+    <script src="js/portfolio.js"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
